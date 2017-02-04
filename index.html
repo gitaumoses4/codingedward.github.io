@@ -63,31 +63,26 @@
 				<li class="sidebar-item"><a href="#" class="sidebar-anchor">Contact</a></li>
 			</ul>
 		</div>
-	
-
-	
-	<script>
-		/*
-		Inspired by: jessejojojohnson.com
-		Plugin by: mattboldt/typed.js
-		*/
-		var subtitles = [
-		    "/* talk is cheap,^500 show me the code^400... */", // Linus Torvalds 
-		    "/* live code,^500 love code... */",					// me :)
-		    "/* to iterate is human,^500 to recurse divine...^400 */", // L Peter Deutsch 
-		    "/* proof of work... */",
-		    "/* think twice,^500 code once... */"
-		];
-		$(".card-text").typed({
-		      strings: [ subtitles[Math.floor((Math.random() * subtitles.length))]],
-		      typeSpeed: 0,
-		      backDelay: 500,
-		      showCursor: false,
-		      startDelay: 1500
-		});
-	</script>
 	<script type="text/javascript">
 		$(document).ready(function() {
+			/*
+			Inspired by: jessejojojohnson.com
+			Plugin by: mattboldt/typed.js
+			*/
+			var subtitles = [
+			    "/* talk is cheap,^500 show me the code^400... */", // Linus Torvalds 
+			    "/* live code,^500 love code... */",					// me :)
+			    "/* to iterate is human,^500 to recurse divine...^400 */", // L Peter Deutsch 
+			    "/* proof of work... */",
+			    "/* think twice,^500 code once... */"
+			];
+			$(".card-text").typed({
+			      strings: [ subtitles[Math.floor((Math.random() * subtitles.length))]],
+			      typeSpeed: 0,
+			      backDelay: 500,
+			      showCursor: false,
+			      startDelay: 1500
+			});
 
 			function toggleSidebar() {
 				
