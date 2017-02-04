@@ -1,9 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"--> 
+	<!--link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet"--> 
+	<!--link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet"--> 
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/tether.min.js"></script>
+	<script type="text/javascript" src="js/typed.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<title>Coding Edward</title>
 </head>
 <body>
-	<img src="images/edward_main.png">
+
+	<div class="nav-right visible-xs">
+  			<div class="button" id="btn">
+				<div class="bar top"></div>
+				<div class="bar middle"></div>
+				<div class="bar bottom"></div>
+  			</div>
+		</div>
+		<!-- nav-right -->
+		<main>
+			<nav>
+				<div class="nav-right hidden-xs">
+					<div class="button" id="btn">
+						<div class="bar top"></div>
+						<div class="bar middle"></div>
+						<div class="bar bottom"></div>
+					</div>
+				</div>
+				<!-- nav-right -->
+			</nav>
+			<div>
+
+		
+		<center>
+			<img src="img/ed-1.png" class="passport rounded-circle mx-auto d-block" alt="cool passport">
+			<div class="animated fadeInUp">
+				<h2 class="header-small"> Software Developer</h2>
+				<h1 class="header-big"> EDWARD NJOROGE</h1>	
+			</div>
+			<div class="header-card">
+				<h3 class="card-text">&nbsp;</h3>
+				<button class="cool-button">MY WORK</button>
+			</div>
+		</center>
+	</div>
+		</main>
+
+		<div class="sidebar">
+			<ul class="sidebar-list">
+				<li class="sidebar-item"><a href="#" class="sidebar-anchor">About</a></li>
+				<li class="sidebar-item"><a href="#" class="sidebar-anchor">Portfolio</a></li>
+				<li class="sidebar-item"><a href="#" class="sidebar-anchor">Blog</a></li>
+				<li class="sidebar-item"><a href="#" class="sidebar-anchor">Resume</a></li>
+				<li class="sidebar-item"><a href="#" class="sidebar-anchor">Contact</a></li>
+			</ul>
+		</div>
+	
+
+	
+	<script>
+		/*
+		Inspired by: jessejojojohnson.com
+		Plugin by: mattboldt/typed.js
+		*/
+		var subtitles = [
+		    "/* talk is cheap,^500 show me the code^400... */", // Linus Torvalds 
+		    "/* live code,^500 love code... */",					// me :)
+		    "/* to iterate is human,^500 to recurse divine...^400 */", // L Peter Deutsch 
+		    "/* proof of work... */",
+		    "/* think twice,^500 code once... */"
+		];
+		$(".card-text").typed({
+		      strings: [ subtitles[Math.floor((Math.random() * subtitles.length))]],
+		      typeSpeed: 0,
+		      backDelay: 500,
+		      showCursor: false,
+		      startDelay: 1500
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			function toggleSidebar() {
+				
+				$(".button").toggleClass("active");
+				$("main").toggleClass("move-to-left");
+				$(".sidebar-item").toggleClass("active");
+			}
+
+			$(".button").on("click tap", function() {
+				toggleSidebar();
+			});
+
+			$(document).keyup(function(e) {
+				if (e.keyCode === 27) {
+				  toggleSidebar();
+				}
+			});
+
+		});
+	</script>
 </body>
 </html>
