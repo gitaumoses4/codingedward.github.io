@@ -83,9 +83,13 @@
 			</ul>
 		</div>
 	<script type="text/javascript">
+
 		$(document).ready(function() {
 			
-			$(".se-pre-con").delay(1000).fadeOut("slow");
+			window.document.body.onload = removeLoader; // note removed parentheses
+			function removeLoader() {
+	        	$(".se-pre-con").delay(1000).fadeOut("slow");
+	    	}
 			/*
 			Inspired by: jessejojojohnson.com
 			Plugin by: mattboldt/typed.js
