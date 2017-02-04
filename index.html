@@ -85,28 +85,30 @@
 	<script type="text/javascript">
 
 		$(document).ready(function() {
-			
+			/* this will wait for the page to load completely */
 			window.document.body.onload = removeLoader; // note removed parentheses
 			function removeLoader() {
-	        	$(".se-pre-con").delay(1000).fadeOut("slow");
+	        	$(".se-pre-con").delay(200).fadeOut("slow");
+
+		        	/*
+					Inspired by: jessejojojohnson.com
+					Plugin by: mattboldt/typed.js
+					*/
+					var subtitles = [
+					    "/* talk is cheap,^500 show me the code^400... */", // Linus Torvalds 
+					    "/* live code,^500 love code... */",					// me :)
+					    "/* proof of work... */",
+					    "/* think twice,^500 code once... */"
+					];
+					$(".card-text").typed({
+					      strings: [ subtitles[Math.floor((Math.random() * subtitles.length))]],
+					      typeSpeed: 0,
+					      backDelay: 500,
+					      showCursor: false,
+					      startDelay: 1500
+					});
 	    	}
-			/*
-			Inspired by: jessejojojohnson.com
-			Plugin by: mattboldt/typed.js
-			*/
-			var subtitles = [
-			    "/* talk is cheap,^500 show me the code^400... */", // Linus Torvalds 
-			    "/* live code,^500 love code... */",					// me :)
-			    "/* proof of work... */",
-			    "/* think twice,^500 code once... */"
-			];
-			$(".card-text").typed({
-			      strings: [ subtitles[Math.floor((Math.random() * subtitles.length))]],
-			      typeSpeed: 0,
-			      backDelay: 500,
-			      showCursor: false,
-			      startDelay: 1500
-			});
+			
 
 			function toggleSidebar() {
 				
