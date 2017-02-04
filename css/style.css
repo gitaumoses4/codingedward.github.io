@@ -6,6 +6,18 @@ html {
   margin: 0;
   
 }
+body {
+  background: #b8d456;
+  color: #1d1d1d;
+  margin: 0;
+  padding: 0;
+}
+
+/* preloads background */
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:url("../img/bg2.jpg");
+}
 
 /*
 body {
@@ -350,12 +362,7 @@ if it's not present, don't show loader */
 	background-color: #b8d456;
 	z-index: 9999;
 }
-body {
-  background: #b8d456;
-  color: #1d1d1d;
-  margin: 0;
-  padding: 0;
-}
+
 .loader {
   position: absolute;
   left: 50%;
