@@ -63,8 +63,10 @@
 		
 		<center>
 			<img src="img/ed.png" class="passport rounded-circle mx-auto d-block" alt="cool passport">
-			<h2 class="header-small"> Software Developer</h2>
-			<h1 class="header-big">EDWARD NJOROGE</h1>	
+			<div class="cool-titles">
+				<div class="header-small"> Software Developer</div>
+				<div class="header-big">EDWARD NJOROGE</div>	
+			</div>
 			<div class="header-card">
 				<h3 class="card-text">&nbsp;</h3>
 				<button class="cool-button">MY WORK</button>
@@ -88,7 +90,8 @@
 			/* this will wait for the page to load completely */
 			window.document.body.onload = removeLoader; // note removed parentheses
 			function removeLoader() {
-	        	$(".se-pre-con").delay(200).fadeOut("slow");
+				var delayDuration = 1500;
+	        	$(".se-pre-con").delay(delayDuration).fadeOut("slow");
 
 		        	/*
 					Inspired by: jessejojojohnson.com
@@ -105,7 +108,7 @@
 					      typeSpeed: 0,
 					      backDelay: 500,
 					      showCursor: false,
-					      startDelay: 1500
+					      startDelay: delayDuration + 500,
 					});
 	    	}
 			

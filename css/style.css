@@ -52,7 +52,56 @@ body {
 	cursor: pointer;
 }
 
-@media screen and (min-width: 600px) {
+.passport {
+	border: 5px solid white;
+	margin-top: 3%;
+
+}
+
+.header-big {
+	margin: 2%;
+	color: white;
+	font-size: 30px;
+	font-family: sans-serif;
+}
+
+.header-small {
+	margin: 2%;
+	color: white;
+	font-size: 24px;
+	font-family: sans-serif;
+}
+
+.cool-titles {
+	margin-top: 3%;
+	background-color: rgba(0,0,0, 0.1);
+	color: black;
+	width: 100%;
+}
+
+.cool-button:hover {
+	background-color: orange;
+}
+
+
+@media screen and (min-width: 550px) {
+    .header-card {
+		width: 80%;
+	}
+	.cool-button {
+		width: 50%;
+	}
+	.card-text {
+		height: 60px;
+	}
+	.cool-titles {
+		width: 60%;
+	}
+
+}
+
+
+@media screen and (min-width: 1050px) {
     .header-card {
 		width: 70%;
 	}
@@ -62,31 +111,13 @@ body {
 	.card-text {
 		height: auto;
 	}
+	.cool-titles {
+		width: 30%;
+	}
 
 }
-.passport {
-	border: 5px solid white;
-	margin-top: 3%;
 
-}
-
-.header-big {
-	margin: 2%;
-	font-size: 30px;
-	color: white;
-	font-family: sans-serif;
-}
-
-.header-small {
-	margin: 2%;
-	font-size: 24px;
-	color: white;
-	font-family: sans-serif;
-}
-
-.cool-button:hover {
-	background-color: orange;
-} 
+ 
 
 /*================ Nav Style ========================*/
 
