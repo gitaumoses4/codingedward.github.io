@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
-	<!--link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"--> 
-	<!--link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet"--> 
-	<!--link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet"--> 
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<!--link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"-->
+	<!--link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet"-->
+	<!--link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet"-->
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
@@ -17,6 +18,7 @@
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<title>Coding Edward</title>
 </head>
+
 <body>
 	<!-- Preloader Licence -->
 	<!-- 
@@ -28,85 +30,62 @@
 	-->
 	<div class="se-pre-con">
 		<div class="loader">
-		  <div class="side"></div>
-		  <div class="side"></div>
-		  <div class="side"></div>
-		  <div class="side"></div>
-		  <div class="side"></div>
-		  <div class="side"></div>
-		  <div class="side"></div>
-		  <div class="side"></div>
+			<div class="side"></div>
+			<div class="side"></div>
+			<div class="side"></div>
+			<div class="side"></div>
+			<div class="side"></div>
+			<div class="side"></div>
+			<div class="side"></div>
+			<div class="side"></div>
 		</div>
 	</div>
 	<!-- Ends -->
 
-		<div class="nav-right visible-xs">
-  			<div class="button" id="btn">
-				<div class="bar top"></div>
-				<div class="bar middle"></div>
-				<div class="bar bottom"></div>
-  			</div>
+	<div class="nav-right visible-xs">
+		<div class="button" id="btn">
+			<div class="bar top"></div>
+			<div class="bar middle"></div>
+			<div class="bar bottom"></div>
 		</div>
-		<div><!-- fix the scroll bar overflow: auto-->
-			<main>
-				
-				<div>
-					<center>
-						
-					</center>
-			</div>
-		</main>
-
 	</div>
-		<div> <!-- fix the scroll bar overflow: auto-->
-			<div class="sidebar">
+	<main>
+		<center>
+
+			<div class="about-card" style="background-color: rgba(148,173,89, 0.8); color: black; margin-top: 20%;">
+				<h4>CONTACT ME</h4>
+				<p>Hello, welcome to my portfolio. My name is Edward Njoroge and I am a software developer.</p>
+				<p>Currently I am an undergraduate student in my third year at the Jomo Kenyatta University of Agriculture and Technology(Nairobi,
+					Kenya). At JKUAT I am pursuing a degree in Mathematics and Computer Science. </p>
+			</div>
+			<div class="eof">eof</div>
+		</center>
+	</main>
+	<div>
+		<!-- fix the scroll bar overflow: auto-->
+		<div class="sidebar">
 			<ul class="sidebar-list">
 				<li class="sidebar-item"><a href="index.html" class="sidebar-anchor">About Me</a></li>
 				<li class="sidebar-item"><a href="#" class="sidebar-anchor">Portfolio</a></li>
 				<li class="sidebar-item"><a href="#" class="sidebar-anchor">Blog</a></li>
 				<li class="sidebar-item"><a href="#" class="sidebar-anchor">Résumé</a></li>
-				<li class="sidebar-item"><a href="#" class="sidebar-anchor">Contact</a></li>
+				<li class="sidebar-item"><a href="contact.html" class="sidebar-anchor">Contact</a></li>
 			</ul>
 		</div>
-		</div>
+	</div>
 	<script type="text/javascript">
-
 		window.document.body.onload = removeLoader;
-		
-
 		function removeLoader() {
 			var delayDuration = 500;
         	$(".se-pre-con").delay(delayDuration).fadeOut("slow");
-
-	        	/*
-				Inspired by: jessejojojohnson.com
-				Plugin by: mattboldt/typed.js
-				*/
-				var subtitles = [
-				    "/* talk is cheap,^500 show me the code... */", // Linus Torvalds 
-				    "/* live code,^500 love code... */",					// me :)
-				    "/* proof of work... */",
-				    "/* think twice,^500 code once... */",
-				    "/* i live for this stuff... */"
-				];
-				$(".card-text").typed({
-				      strings: [ subtitles[Math.floor((Math.random() * subtitles.length))]],
-				      typeSpeed: 0,
-				      backDelay: 500,
-				      showCursor: false,
-				      startDelay: delayDuration + 500,
-				});
 				function toggleSidebar() {
-			
 					$(".button").toggleClass("active");
 					$("main").toggleClass("move-to-left");
 					$(".sidebar-item").toggleClass("active");
 				}
-
 				$(".button").on("click tap", function() {
 					toggleSidebar();
 				});
-
 				$(document).keyup(function(e) {
 					if (e.keyCode === 27) {
 					  toggleSidebar();
@@ -114,6 +93,5 @@
 				});
     	}
 	</script>
-
-</body>
+</body>z
 </html>
