@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
 	<!--link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"--> 
 	<!--link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet"--> 
 	<!--link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet"--> 
@@ -39,98 +40,151 @@
 	</div>
 	<!-- Ends -->
 
-	<div class="nav-right visible-xs">
+		<div class="nav-right visible-xs">
   			<div class="button" id="btn">
 				<div class="bar top"></div>
 				<div class="bar middle"></div>
 				<div class="bar bottom"></div>
   			</div>
 		</div>
-		<!-- nav-right -->
-		<main>
-			<nav>
-				<div class="nav-right hidden-xs">
-					<div class="button" id="btn">
-						<div class="bar top"></div>
-						<div class="bar middle"></div>
-						<div class="bar bottom"></div>
-					</div>
-				</div>
-				<!-- nav-right -->
-			</nav>
-			<div>
+		<div><!-- fix the scroll bar overflow: auto-->
+			<main>
+				
+				<div>
 
-		
-		<center>
-			<img src="img/ed.png" class="passport rounded-circle mx-auto d-block" alt="cool passport">
-			<div class="cool-titles">
-				<div class="header-small"> Software Developer</div>
-				<div class="header-big">EDWARD NJOROGE</div>	
+			
+				<center>
+					<img src="img/ed-1.png" class="passport rounded-circle mx-auto d-block" alt="cool passport">
+					<div class="cool-titles">
+						<div class="header-small"> Software Developer</div>
+						<div class="header-big">EDWARD NJOROGE</div>	
+					</div>
+					<div class="header-card">
+						<h3 class="card-text">&nbsp;</h3>
+						<button class="cool-button">MY WORK</button>
+					</div>
+					<div class="about-card" style="background-color: rgba(148,173,89, 0.8); color: black;">
+						<h4>WHO I AM</h4>
+						<p>Hello, welcome to my portfolio. My name is Edward Njoroge and I am a software developer.</p>
+						<p>Currently I am an undergraduate student in my third year at the Jomo Kenyatta University of Agriculture and Technology(Nairobi, Kenya). At JKUAT I am pursuing a degree in Mathematics and Computer Science. </p>
+					</div>
+					<div class="about-card" style="background-color: rgba(92,78,71, 0.8)">
+						<h4>WHAT I DO</h4>
+						<p>I am a developer having worked in web, mobile and desktop apps
+						design, analysis and implementation. I have worked with all of the mainstream
+						programming languages including C++, Java, Python and C. Currently I am learning
+						Scheme for functional programming. </p>
+						<p>Some frameworks I have used:</p>
+						<ul>
+							<li>For web development:</li>
+							<ul>
+								<li>HTML5, Javascript, jQuery, CSS3, PHP and MySQL database.</li>
+								<li>Laravel framework for backend.</li>
+								<li>Bootstrap and W3.css frontend frameworks.</li>
+								<li>REST and SOAP API design</li>
+							</ul>
+							<li>For desktop software development:</li>
+							<ul>
+								<li>Java Framework.</li>
+								<li>Qt C++ and Qt Qml framework.</li>
+								<li>JavaFx framework.</li>
+							</ul>
+							<li>For mobile apps development:</li>
+							<ul>
+								<li>Android</li>
+								<li>Adobe Phonegap</li>
+								<li>Cordova framework</li>
+							</ul>
+						</ul>
+						<p>Besides this, I am good at scientific computing involving data
+							analysis and mathematical algorithms mostly using Python. I also have a 
+							keen interest in data structures, algorithms and artificial intelligence.</p>
+					</div>
+					<div class="about-card" style="background-color: rgba(107,107,107, 0.8); color: black;">
+						<h4>DREAMS AND GOALS</h4>
+						<p>Everyone has these, let me have these too :-)</p>
+						<ul>
+							<li>My short term goals:</li>
+							<ul>
+								<li>Join an outstanding software development company after school.</li>
+								<li>Have a firm foundation in mathematics for further study in
+									advanced computer science.</li>
+							</ul>
+							<li>Long term goals:</li>
+							<ul>
+								<li>Master data structures, algorithms and artificial intelligence (neural networks).</li>
+								<li>Build and run a software company that solves practical problems in the society.</li>
+							</ul>
+							<li>Dream:</li>
+							<ul>
+								<li>Make the most I can of myself.</li>
+							</ul>
+	
+						</ul>
+						
+					</div>
+					<div class="eof" >eof</div>
+				</center>
 			</div>
-			<div class="header-card">
-				<h3 class="card-text">&nbsp;</h3>
-				<button class="cool-button">MY WORK</button>
-			</div>
-		</center>
-	</div>
 		</main>
 
-		<div class="sidebar">
+	</div>
+		<div> <!-- fix the scroll bar overflow: auto-->
+			<div class="sidebar">
 			<ul class="sidebar-list">
-				<li class="sidebar-item"><a href="#" class="sidebar-anchor">About</a></li>
+				<li class="sidebar-item"><a href="index.html" class="sidebar-anchor">About Me</a></li>
 				<li class="sidebar-item"><a href="#" class="sidebar-anchor">Portfolio</a></li>
 				<li class="sidebar-item"><a href="#" class="sidebar-anchor">Blog</a></li>
-				<li class="sidebar-item"><a href="#" class="sidebar-anchor">Resume</a></li>
+				<li class="sidebar-item"><a href="#" class="sidebar-anchor">Résumé</a></li>
 				<li class="sidebar-item"><a href="#" class="sidebar-anchor">Contact</a></li>
 			</ul>
 		</div>
+		</div>
 	<script type="text/javascript">
 
-		$(document).ready(function() {
-			/* this will wait for the page to load completely */
-			window.document.body.onload = removeLoader; // note removed parentheses
-			function removeLoader() {
-				var delayDuration = 1500;
-	        	$(".se-pre-con").delay(delayDuration).fadeOut("slow");
+		window.document.body.onload = removeLoader;
+		
 
-		        	/*
-					Inspired by: jessejojojohnson.com
-					Plugin by: mattboldt/typed.js
-					*/
-					var subtitles = [
-					    "/* talk is cheap,^500 show me the code^400... */", // Linus Torvalds 
-					    "/* live code,^500 love code... */",					// me :)
-					    "/* proof of work... */",
-					    "/* think twice,^500 code once... */"
-					];
-					$(".card-text").typed({
-					      strings: [ subtitles[Math.floor((Math.random() * subtitles.length))]],
-					      typeSpeed: 0,
-					      backDelay: 500,
-					      showCursor: false,
-					      startDelay: delayDuration + 500,
-					});
-	    	}
+		function removeLoader() {
+			var delayDuration = 500;
+        	$(".se-pre-con").delay(delayDuration).fadeOut("slow");
+
+	        	/*
+				Inspired by: jessejojojohnson.com
+				Plugin by: mattboldt/typed.js
+				*/
+				var subtitles = [
+				    "/* talk is cheap,^500 show me the code... */", // Linus Torvalds 
+				    "/* live code,^500 love code... */",					// me :)
+				    "/* proof of work... */",
+				    "/* think twice,^500 code once... */",
+				    "/* i live for this stuff... */"
+				];
+				$(".card-text").typed({
+				      strings: [ subtitles[Math.floor((Math.random() * subtitles.length))]],
+				      typeSpeed: 0,
+				      backDelay: 500,
+				      showCursor: false,
+				      startDelay: delayDuration + 500,
+				});
+				function toggleSidebar() {
 			
-
-			function toggleSidebar() {
-				
-				$(".button").toggleClass("active");
-				$("main").toggleClass("move-to-left");
-				$(".sidebar-item").toggleClass("active");
-			}
-
-			$(".button").on("click tap", function() {
-				toggleSidebar();
-			});
-
-			$(document).keyup(function(e) {
-				if (e.keyCode === 27) {
-				  toggleSidebar();
+					$(".button").toggleClass("active");
+					$("main").toggleClass("move-to-left");
+					$(".sidebar-item").toggleClass("active");
 				}
-			});
 
-		});
+				$(".button").on("click tap", function() {
+					toggleSidebar();
+				});
+
+				$(document).keyup(function(e) {
+					if (e.keyCode === 27) {
+					  toggleSidebar();
+					}
+				});
+    	}
 	</script>
+
 </body>
 </html>
