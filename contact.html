@@ -135,14 +135,14 @@
 					$("#error-input").hide();
 					$("#name").val("");
 					$("#message").val("");
-					window.setTimeout(function(){ Ladda.stopAll(); } , 100);
+					window.setTimeout(function(){ Ladda.stopAll(); } , 1000);
 					console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
 				}, function (err) {
 					$("#failed-message").slideDown("slow");
 					$("#successful-message").hide();
 					$("#error-input").hide();
 					console.log("FAILED. error=", err);
-					Lwindow.setTimeout(function(){ Ladda.stopAll(); } , 100);
+					Lwindow.setTimeout(function(){ Ladda.stopAll(); } , 1000);
 				});
 				
 		}
