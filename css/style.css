@@ -4,8 +4,26 @@ html {
   height: 100%;
   padding: 0;
   margin: 0;
-  
 }
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.3rem;
+}
+
+
 body {
   background: #b8d456;
   color: #1d1d1d;
@@ -25,8 +43,8 @@ body {
   padding: 20px;
 	margin-top: 2%;
   font-style: italic;
-  font-family: courier;
 	background-color: rgba(255,255,255, 0.8);
+  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
 }
 .about-card {
   width: 95%;
@@ -36,6 +54,9 @@ body {
 }
 .about-card  p, .about-card li, .about-card ul {
   text-align: left;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
 }
 .header-card-text {
   font-size: 24px;
@@ -459,7 +480,7 @@ nav {
 }
 
 
-/* ================= Loader Style ================ */]
+/* ================= Loader Style ================ */
 /* The page loader */
 /* This only works with JavaScript, 
 if it's not present, don't show loader */
