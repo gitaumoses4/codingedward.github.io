@@ -13,7 +13,7 @@ body {
 
 .eof {
    width: 30%;
-   margin-top: 2%;
+   margin-top: 3%;
    font-size: 30px;
    font-style: italic;
    font-family: courier;
@@ -30,10 +30,8 @@ body {
 }
 .about-card {
   width: 95%;
-  color: white;
   padding: 20px;
   margin-top: 5%;
-  background-color: rgba(255,255,255, 0.4);
   font-family: 'Source Sans Pro', sans-serif;
 }
 .about-card  p, .about-card li, .about-card ul {
@@ -42,6 +40,15 @@ body {
 .header-card-text {
   font-size: 24px;
 	height: 59px;
+}
+
+.contact-card {
+  width: 95%;
+  color: black;
+  margin-top: 25%;
+  padding: 20px;
+  background-color: rgba(148,173,89, 0.8); 
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .cool-button {
@@ -59,6 +66,7 @@ body {
 .passport {
   margin-top: 3%;
 	border: 5px solid white;
+  border-radius: 50%;
 
 }
 
@@ -101,6 +109,15 @@ body {
   border: 5px solid white;
 }
 
+.alert-card {
+  width: 90%;
+  padding: 2px;
+  margin: 5px;
+  vertical-align: middle;
+  opacity: 0.7;
+  display: none;
+}
+
 input {
   float: left;
   background: #b8d456;
@@ -134,12 +151,19 @@ textarea {
   .header-card {
     width: 70%;
   }
+  .alert-card {
+    width: 50%;
+  }
   .g-recaptcha {
     transform:scale(0.80);
     -webkit-transform:scale(0.80); 
   }
+  .contact-card {
+    margin-top: 10%;
+    width: 80%;
+  }
   .about-card {
-    margin-top: 5%;
+    margin-top: 15%;
     width: 80%;
   }
   .cool-button {
@@ -159,11 +183,18 @@ textarea {
     transform:scale(1);
     -webkit-transform:scale(1); 
   }
+  .alert-card {
+    width: 30%;
+  }
   .header-card {
     width: 60%;
   }
   .about-card {
     margin-top: 2%;
+    width: 70%;
+  }
+  .contact-card {
+    margin-top: 7%;
     width: 70%;
   }
   .cool-button {
