@@ -83,6 +83,12 @@ body {
 	background-color: rgba(0,0,0, 0.1);
 }
 
+.g-recaptcha {
+  transform:scale(0.70);
+  -webkit-transform:scale(0.70); 
+  padding-top: 10px;
+}
+
 .cool-button:hover {
 	background-color: orange;
 }
@@ -128,6 +134,10 @@ textarea {
   .header-card {
     width: 70%;
   }
+  .g-recaptcha {
+    transform:scale(0.80);
+    -webkit-transform:scale(0.80); 
+  }
   .about-card {
     margin-top: 5%;
     width: 80%;
@@ -145,6 +155,10 @@ textarea {
 }
 
 @media screen and (min-width: 1050px) {
+  .g-recaptcha {
+    transform:scale(1);
+    -webkit-transform:scale(1); 
+  }
   .header-card {
     width: 60%;
   }
@@ -153,7 +167,7 @@ textarea {
     width: 70%;
   }
   .cool-button {
-    width: 35%;
+    width: 40%;
   }
   .header-card-text {
     height: auto;
@@ -163,6 +177,7 @@ textarea {
   }
 
 }
+
 
 
 /*================ Nav Style ========================*/
