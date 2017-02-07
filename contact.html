@@ -21,14 +21,14 @@
 	<script src="js/spin.min.js"></script>
 	<script src="js/ladda.min.js"></script>
 	<title>Edward Njoroge | Software Developer</title>
-	<!--script>
+	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 		ga('create', 'UA-91423150-1', 'auto');
 		ga('send', 'pageview');
-	</script-->
+	</script>
 </head>
 
 <body>
@@ -78,8 +78,9 @@
 									<p>Please Fill In All The Details.</p>
 								</div>
 							</center>
-							<input placeholder="Your Name" id="name" style="font-size: 19px;"  type="text"><br><br><br>
-							<textarea placeholder="Message" id="message"  style="font-size: 19px;" name="email" id="email" cols="30" rows="5"></textarea><br><br>
+							<input placeholder="Name" id="name"   type="text"><br><br>
+							<input placeholder="Email / Phone" id="contact"   type="text"><br><br>
+							<textarea placeholder="Message" id="message" name="email" id="email" cols="30" rows="5"></textarea><br><br>
 							<!--div class="g-recaptcha" data-sitekey="6LfmaxQUAAAAAJqxyW072l3TtvfVas4UkDu4f54B"></div-->
 							<div class="submit">
 								<center>
@@ -147,8 +148,9 @@
 		function sendMail() {
 			var name = $.trim($("#name").val());
 			var message = $.trim($("#message").val());
+			var contact = $.trim($("#contact").val());
 
-			if (name == "" || message == "") {
+			if (name == "" || message == "" || contact == "") {
 				$("#error-input").slideDown("slow");
 				$("#successful-message").hide();
 				$("#failed-message").hide();
@@ -157,7 +159,7 @@
 			}
 
 			emailjs.send("default_service", "template_dJDtTOVA",
-				{ from_name: name, message_html: message }).then(function (response) {
+				{ from_name: name, message_html: message, from_contact: contact}).then(function (response) {
 					$("#successful-message").slideDown("slow");
 					$("#failed-message").hide();
 					$("#error-input").hide();
