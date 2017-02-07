@@ -1,3 +1,14 @@
+﻿/* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
+@font-face {
+  font-family:"DejaVu Serif Condensed";
+  src:  url("fonts/DejaVuSerifCondensed.eot?") format("eot"),
+        url("fonts/DejaVuSerifCondensed.woff") format("woff"),
+        url("fonts/DejaVuSerifCondensed.ttf") format("truetype"),
+        url("fonts/DejaVuSerifCondensed.svg#DejaVuSerifCondensed") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+
 
 body,
 html {
@@ -26,6 +37,18 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     line-height: 1.1;
     color: inherit;
+}
+
+h1 {
+  font-size: 2.1em;
+}
+
+h2 {
+  font-size: 1.9em;
+}
+
+h3 {
+  font-size: 1.7em;
 }
 
 h4 {
@@ -77,11 +100,11 @@ body {
 }
 
 .contact-card {
-  width: 95%;
+  width: 80%;
   color: black;
   margin-top: 25%;
-  padding: 20px;
-  background-color: rgba(148,173,89, 0.8); 
+  padding: 10px; 
+  background-color: rgba(92,78,71, 0.8);
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -148,7 +171,7 @@ body {
   padding: 2px;
   margin: 5px;
   vertical-align: middle;
-  opacity: 0.7;
+  opacity: 0.5;
   display: none;
 }
 
@@ -179,6 +202,24 @@ textarea {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
   width: 100%;
+}
+
+#shareRoundIcons .jssocials-share-link {
+    border-radius: 50%;
+}
+
+.or {
+  font-style: italic;
+  width: 60%;
+  text-align: center;
+  border-bottom: 1px solid orange;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.or span {
+  background-color: rgba(92,78,71, 0.8);
+  padding: 0 10px;
 }
 
 @media screen and (min-width: 550px) {
@@ -218,7 +259,7 @@ textarea {
     -webkit-transform:scale(1); 
   }
   .alert-card {
-    width: 30%;
+    width: 70%;
   }
   .header-card {
     width: 60%;
@@ -243,10 +284,7 @@ textarea {
 
 }
 
-
-
 /*================ Nav Style ========================*/
-
 main {
   z-index: 2;
   position: relative;
@@ -262,8 +300,6 @@ main {
   transition: transform .7s ease-in-out;
 }
 
-
-
 .sidebar {
   height: 100%;
   width: 400px;
@@ -276,7 +312,6 @@ main {
   background-color: #b8d456;
 }
 
-
 .bar {
   display: block;
   height: 5px;
@@ -284,7 +319,6 @@ main {
   background-color: orange;
   margin: 10px auto;
 }
-
 
 .button {
   cursor: pointer;

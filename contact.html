@@ -7,11 +7,15 @@
 	<meta name="author" content="Edward Njoroge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="font/socicon.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" href="css/jssocials.css">
+	<link rel="stylesheet" href="css/jssocials-theme-plain.css">
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jssocials.min.js"></script>
 	<script type="text/javascript" src="js/typed.min.js"></script>
 	<link rel="stylesheet" href="css/ladda-themeless.min.css">
 	<script src="js/spin.min.js"></script>
@@ -59,30 +63,32 @@
 	</div>
 		<main>
 			<center>
-				<div class="contact-card" style="padding: 0px; background-color: rgba(92,78,71, 0.8); " >
-					<h4 style="margin: 0px; padding: 15px; background-color: white" >CONTACT ME</h4>
+				<div class="contact-card">
 					<div style="padding: 20px; color: white; display:block;" >
-						<div style="width: 50%; float: left" >
-							<h5 >LEAVE A MESSAGE</h5>
-						</div>
-						<div style=" float: left;" >
-							Email Address: <a style="color: black" href="mailto: codingedward@gmail.com">codingedward@gmail.com</a><br><br>
-							<h5 >LEAVE A MESSAGE</h5>
-							<div id="successful-message" class="alert-card" style="background-color: cadetblue;">
-								<p>Message Successfully Sent.</p>
-							</div>
-							<div id="failed-message" class="alert-card" style="background-color: crimson;">
-								<p>Could Not Send Message.<br> Please try again.</p>
-							</div>
-							<div id="error-input" class="alert-card" style="background-color:firebrick;">
-								<p>Please Fill In All The Details.</p>
-							</div>
-							<input placeholder="Your Name" id="name" style="font-size: 19px;"  type="text"><br><br>
-							<textarea placeholder="Message" id="message"  style="font-size: 19px;" name="email" id="email" cols="30" rows="5"></textarea>
+						<div style="width: 80%; " >
+							<h3>Contact Me</h3><br>
+							<center>
+								<div id="successful-message" class="alert-card" style="background-color: cadetblue;">
+									<p>Message Successfully Sent.</p>
+								</div>
+								<div id="failed-message" class="alert-card" style="background-color: crimson;">
+									<p>Could Not Send Message Please try again.</p>
+								</div>
+								<div id="error-input" class="alert-card" style="background-color:firebrick;">
+									<p>Please Fill In All The Details.</p>
+								</div>
+							</center>
+							<input placeholder="Your Name" id="name" style="font-size: 19px;"  type="text"><br><br><br>
+							<textarea placeholder="Message" id="message"  style="font-size: 19px;" name="email" id="email" cols="30" rows="5"></textarea><br><br>
 							<!--div class="g-recaptcha" data-sitekey="6LfmaxQUAAAAAJqxyW072l3TtvfVas4UkDu4f54B"></div-->
-							<section class="submit">
-								<button class="ladda-button cool-button" onclick="sendMail();"  data-style="contract-overlay">SUBMIT</button>
-							</section>
+							<div class="submit">
+								<center>
+									<button class="ladda-button cool-button" onclick="sendMail();"  data-style="contract-overlay">SUBMIT</button>
+								</center>
+							</div>
+						<!--div class="or" ><span>OR</span></div><br>
+						<h5>CONNECT AND SHARE</h5-->
+							<div id="shareRoundIcons"></div>
 						</div>
 						<br style="clear:both;"/>
 						
@@ -103,6 +109,14 @@
 			</ul>
 		</div>
 	</div>
+	<script>
+		$("#shareRoundIcons").jsSocials({
+			showLabel: false,
+			showCount: false,
+			shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "whatsapp"]
+		});
+
+	</script>
 	<script type="text/javascript">
 		// Bind submit button
 		Ladda.bind( '.submit button', { timeout: 10000 } );
@@ -159,7 +173,7 @@
 		}
 	
 	</script>
-	<!--script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script-->
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 	<script type="text/javascript">
 		(function () { emailjs.init("user_xh26EplvGf8Yq6O3FH0oe"); })();
 	</script>
