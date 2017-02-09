@@ -68,7 +68,8 @@ body {
 }
 
 .eof {
-   width: 30%;
+   width: 25%;
+   padding: 10px;;
    margin-top: 3%;
    font-size: 20px;
    font-style: italic;
@@ -235,11 +236,11 @@ textarea {
     -webkit-transform:scale(0.80); 
   }
   .contact-card {
-    margin-top: 10%;
+    margin-top: 15%;
     width: 80%;
   }
   .about-card {
-    margin-top: 15%;
+    margin-top: 4%;
     width: 80%;
   }
   .cool-button {
@@ -253,6 +254,38 @@ textarea {
   }
 
 }
+
+@media screen and (min-width: 1050px) {
+  .g-recaptcha {
+    transform:scale(1);
+    -webkit-transform:scale(1); 
+  }
+  .alert-card {
+    width: 70%;
+  }
+  .header-card {
+    width: 60%;
+  }
+  .about-card {
+    margin-top: 2%;
+    width: 70%;
+  }
+  .contact-card {
+    margin-top: 10%;
+    width: 60%;
+  }
+  .cool-button {
+    width: 40%;
+  }
+  .header-card-text {
+    height: auto;
+  }
+  .cool-titles {
+    width: 30%;
+  }
+
+}
+
 
 .resume-card {
   letter-spacing: 1px;
@@ -291,36 +324,6 @@ textarea {
   width: 90%;
 }
 
-@media screen and (min-width: 1050px) {
-  .g-recaptcha {
-    transform:scale(1);
-    -webkit-transform:scale(1); 
-  }
-  .alert-card {
-    width: 70%;
-  }
-  .header-card {
-    width: 60%;
-  }
-  .about-card {
-    margin-top: 2%;
-    width: 70%;
-  }
-  .contact-card {
-    margin-top: 7%;
-    width: 70%;
-  }
-  .cool-button {
-    width: 40%;
-  }
-  .header-card-text {
-    height: auto;
-  }
-  .cool-titles {
-    width: 30%;
-  }
-
-}
 
 /*================ Nav Style ========================*/
 main {
