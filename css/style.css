@@ -1,13 +1,8 @@
-﻿/* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
-@font-face {
-  font-family:"DejaVu Serif Condensed";
-  src:  url("fonts/DejaVuSerifCondensed.eot?") format("eot"),
-        url("fonts/DejaVuSerifCondensed.woff") format("woff"),
-        url("fonts/DejaVuSerifCondensed.ttf") format("truetype"),
-        url("fonts/DejaVuSerifCondensed.svg#DejaVuSerifCondensed") format("svg");
-  font-weight:normal;
-  font-style:normal;
+﻿* {
+  font-family: sans-serif;
 }
+
+
 body,
 html {
   height: 100%;
@@ -224,6 +219,45 @@ textarea {
   padding: 0 10px;
 }
 
+.resume-card {
+  width: 95%;
+  margin-top: 20%;
+  color:white;
+  padding: 5%;
+  background-color: rgba(92,78,71, 0.8);
+  font-family: sans-serif;
+}
+
+
+.resume-card a, .contact-card a {
+  color: orange;
+}
+
+.resume-card hr {
+  width: 60%;
+  color: white;
+}
+
+.resume-card th, .resume-card td, .resume-card table {
+  border: 1px dashed orange;
+  border-collapse: collapse;
+}
+
+.resume-card  tr > td {
+  width: 50%;
+  padding: 5px;
+}
+
+.resume-card p, .resume-card li {
+  text-align: left;
+}
+
+.resume-card table {
+  text-align: center;
+  width: 90%;
+}
+
+
 @media screen and (min-width: 550px) {
   .header-card {
     width: 70%;
@@ -239,8 +273,8 @@ textarea {
     margin-top: 15%;
     width: 80%;
   }
-  .about-card {
-    margin-top: 4%;
+  .about-card, .resume-card {
+    margin-top: 10%;
     width: 80%;
   }
   .cool-button {
@@ -270,9 +304,13 @@ textarea {
     margin-top: 2%;
     width: 70%;
   }
+  .resume-card {
+    margin: 7%;
+    width: 70%;
+  }
   .contact-card {
-    margin-top: 10%;
-    width: 60%;
+    margin-top: 5%;
+    width: 70%;
   }
   .cool-button {
     width: 40%;
@@ -283,51 +321,7 @@ textarea {
   .cool-titles {
     width: 30%;
   }
-
 }
-
-* {
-  font-family: Arial, sans-serif;
-  letter-spacing: 0.7px;
-}
-
-.resume-card {
-  width: 70%;
-  color:white;
-  padding: 5%;
-  background-color: rgba(92,78,71, 0.8);
-  font-family: sans-serif;
-}
-
-
-.resume-card a {
-  color: orange;
-}
-
-.resume-card hr {
-  width: 60%;
-  color: white;
-}
-
-.resume-card th, .resume-card td, .resume-card table {
-  border: 1px dashed orange;
-  border-collapse: collapse;
-}
-
-.resume-card  tr > td {
-  width: 50%;
-  padding: 5px;
-}
-
-.resume-card p, .resume-card li {
-  text-align: left;
-}
-
-.resume-card table {
-  text-align: center;
-  width: 90%;
-}
-
 
 /*================ Nav Style ========================*/
 main {
