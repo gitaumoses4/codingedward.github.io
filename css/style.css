@@ -92,6 +92,12 @@ body {
   font-weight: normal;
   line-height: 1.5;
 }
+
+.about-card img {
+  margin: auto;
+  border: 5px solid white;
+}
+
 .header-card-text {
 	height: 59px;
 }
@@ -219,46 +225,65 @@ textarea {
   padding: 0 10px;
 }
 
-.resume-card {
+.info-card {
   width: 95%;
   margin-top: 20%;
   color:white;
   padding: 5%;
   background-color: rgba(92,78,71, 0.8);
-  font-family: sans-serif;
 }
 
 
-.resume-card a, .contact-card a {
+.info-card a, .contact-card a {
   color: orange;
 }
 
-.resume-card hr {
+.info-card hr {
   width: 60%;
   color: white;
 }
 
-.resume-card th, .resume-card td, .resume-card table {
+.info-card th, 
+.info-card td, 
+.info-card table,
+.about-card th,
+.about-card td,
+.about-card table {
   border: 1px dashed orange;
   border-collapse: collapse;
 }
 
-.resume-card  tr > td {
+.info-card  tr > td,
+.about-card  tr > td {
   width: 50%;
   padding: 5px;
 }
 
-.resume-card p, .resume-card li {
+.info-card p, .info-card li {
   text-align: left;
 }
 
-.resume-card table {
+.info-card table,
+.about-card table {
   text-align: center;
   width: 90%;
 }
 
+.about-card table {
+  text-align: center;
+
+}
 
 @media screen and (min-width: 550px) {
+  .about-card table {
+    width: auto;
+  }
+
+  .about-card img {
+    float: left;
+    margin: 20px;
+  }
+
   .header-card {
     width: 70%;
   }
@@ -273,7 +298,7 @@ textarea {
     margin-top: 15%;
     width: 80%;
   }
-  .about-card, .resume-card {
+  .about-card, .info-card {
     margin-top: 10%;
     width: 80%;
   }
@@ -304,7 +329,7 @@ textarea {
     margin-top: 2%;
     width: 70%;
   }
-  .resume-card {
+  .info-card {
     margin: 7%;
     width: 70%;
   }
@@ -370,7 +395,6 @@ main {
   -o-transition: all .7s ease;
   transition: all .7s ease;
 }
-
 
 .nav-right {
   position: fixed;
