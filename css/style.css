@@ -269,6 +269,10 @@ textarea {
   width: 90%;
 }
 
+.info-card img {
+  width: 95%;
+}
+
 .about-card table {
   text-align: center;
 
@@ -319,6 +323,7 @@ textarea {
     transform:scale(1);
     -webkit-transform:scale(1); 
   }
+  .info-card img,
   .alert-card {
     width: 70%;
   }
@@ -330,7 +335,7 @@ textarea {
     width: 70%;
   }
   .info-card {
-    margin: 7%;
+    margin: 2%;
     width: 70%;
   }
   .contact-card {
