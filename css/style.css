@@ -93,6 +93,10 @@ body {
   line-height: 1.5;
 }
 
+.about-card a {
+  color:darkgreen;
+}
+
 .about-card img {
   margin: auto;
   border: 5px solid white;
@@ -325,7 +329,7 @@ textarea {
   }
   .info-card img,
   .alert-card {
-    width: 70%;
+    width: 80%;
   }
   .header-card {
     width: 60%;
