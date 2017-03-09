@@ -78,7 +78,7 @@ body {
 	margin-top: 2%;
   font-style: italic;
 	background-color: rgba(255,255,255, 0.8);
-  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+  font-family: Courier, Courier New, monospace;
 }
 .about-card {
   width: 95%;
@@ -103,7 +103,8 @@ body {
 }
 
 .header-card-text {
-	height: 59px;
+  font-size: 24px;
+  margin-bottom: 5px;
 }
 
 .contact-card {
