@@ -154,7 +154,7 @@ body {
   width: 100%;
   color: black;
 	margin-top: 2%;
-	background-color: rgba(0,0,0, 0.1);
+	background-color: rgba(0,0,0, 0.3);
 }
 
 .g-recaptcha {
@@ -478,6 +478,7 @@ nav {
   position: relative;
   margin-top: 150px;
   text-align: center;
+  font-style: sans-serif;
 }
 
 .sidebar-item {
