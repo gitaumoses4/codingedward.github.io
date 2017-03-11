@@ -385,6 +385,7 @@ main {
   z-index: 1;
   right: 0;
   background-color: #b8d456;
+  font-family: sans-serif;
 }
 
 .bar {
@@ -478,7 +479,6 @@ nav {
   position: relative;
   margin-top: 150px;
   text-align: center;
-  font-style: sans-serif;
 }
 
 .sidebar-item {
