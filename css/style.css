@@ -364,7 +364,7 @@ main {
   position: relative;
   overflow: auto;
   height: 100%;
-  background-image: url("../img/bg.jpg");
+  background-image: url("../img/bg_1.jpg");
   background-attachment: fixed;
   background-size: 100%;
   -webkit-transition: transform .7s ease-in-out;
