@@ -84,7 +84,7 @@ body {
   width: 95%;
   padding: 20px;
   margin-top: 5%;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .about-card  p, .about-card li, .about-card ul, input {
   text-align: left;
@@ -113,7 +113,7 @@ body {
   margin-top: 25%;
   padding: 2px; 
   background-color: rgba(92,78,71, 0.8);
-  font-family:  sans-serif;
+  font-family:  'Lato', sans-serif;
 }
 
 .cool-button {
@@ -125,7 +125,7 @@ body {
   cursor: pointer;
   background-color: orange;
   padding: 2px 10px 2px 10px;
-  font-family:  sans-serif;
+  font-family:  'Lato', sans-serif;
 }
 
 .passport {
@@ -139,14 +139,14 @@ body {
 	margin: 2%;
 	color: white;
 	font-size: 25px;
-	font-family: sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 .header-small {
 	margin: 2%;
 	color: white;
 	font-size: 15px;
-	font-family: sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 .cool-titles {
@@ -207,7 +207,7 @@ textarea {
   background: #b8d456;
   border: 1 px white;
   opacity: 0.4;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: bold;
   width: 100%;
 }
