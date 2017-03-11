@@ -309,7 +309,7 @@ textarea {
     width: 80%;
   }
   .about-card, .info-card {
-    margin-top: 10%;
+    margin-top: 5%;
     width: 80%;
   }
   .cool-button {
@@ -337,7 +337,6 @@ textarea {
     width: 60%;
   }
   .about-card {
-    margin-top: 2%;
     width: 70%;
   }
   .info-card {
