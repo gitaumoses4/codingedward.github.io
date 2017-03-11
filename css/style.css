@@ -233,14 +233,14 @@ textarea {
 
 .info-card {
   width: 95%;
-  margin-top: 20%;
+  margin-top: 10%;
   color:white;
   padding: 5%;
   background-color: rgba(92,78,71, 0.8);
 }
 
 
-.info-card a, .contact-card a {
+.info-card a, .contact-card a, .about-card a {
   color: orange;
 }
 
